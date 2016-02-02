@@ -1,0 +1,180 @@
+<html lang="en">
+<meta name="viewport" content="width=1024" />
+<head>
+    <title>Switch.cm Tech Stacks</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="assets/js/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <style>
+        .b {
+            display: inline-block;
+            -webkit-transition: 0.5s;
+            -moz-transition:    0.5s;
+            -ms-transition:     0.5s;
+            -o-transition:      0.5s;
+            transition:         0.5s;
+        }
+
+        /*
+            ... and we want 'positioning` word to move up a bit when the step gets
+            `present` class ...
+        */
+        .present .move-up {
+            -webkit-transform: translateY(-10px);
+            -moz-transform:    translateY(-10px);
+            -ms-transform:     translateY(-10px);
+            -o-transform:      translateY(-10px);
+            transform:         translateY(-10px);
+        }
+
+        /*
+            ... 'rotating' to rotate a quarter of a second later ...
+        */
+        .present .rotating {
+            -webkit-transform: rotate(-10deg);
+            -moz-transform:    rotate(-10deg);
+            -ms-transform:     rotate(-10deg);
+            -o-transform:      rotate(-10deg);
+            transform:         rotate(-10deg);
+
+            -webkit-transition-delay: 0.25s;
+            -moz-transition-delay:    0.25s;
+            -ms-transition-delay:     0.25s;
+            -o-transition-delay:      0.25s;
+            transition-delay:         0.25s;
+        }
+
+        /*
+            ... and 'scaling' to scale down after another quarter of a second.
+        */
+        .present .scaling-up {
+            -webkit-transform: scale(1.7);
+            -moz-transform:    scale(1.7);
+            -ms-transform:     scale(1.7);
+            -o-transform:      scale(1.7);
+            transform:         scale(1.7);
+
+            -webkit-transition-delay: 0.2s;
+            -moz-transition-delay:    0.2s;
+            -ms-transition-delay:     0.2s;
+            -o-transition-delay:      0.2s;
+            transition-delay:         0.2s;
+        }
+    </style>
+</head>
+<body>
+<div id="impress">
+    <div id="overview" class="step" data-y="-3000" data-scale="16"></div>
+
+    <div id="logo" class="step" data-x="-2000" data-y="-3000">
+        <img src="assets/image/switch-cm-tech-stack_block_1.jpeg">
+    </div>
+
+    <div id="what-is-switch" class="step" data-x="-1000" data-y="-3000" data-rotate="0">
+        <h1 style="font-size: 80px; text-align: center;" class="b move-up">WHAT IS SWITCH.CM?</h1>
+    </div>
+
+    <div id="explain-switch" class="step" data-x="-1000" data-y="-2400" data-z="-100" data-rotate-x="-40" data-rotate-y="0">
+        <p><b class="b rotating">Switch.cm</b> is a cloud-based property management system which manage all of your reservations from any of online travel agencies.</p>
+    </div>
+
+    <div id="tech-stack-switch" class="step" data-x="500" data-y="-2400" data-z="-100" data-rotate-x="-40" data-rotate-y="40">
+        <p><span style="font-size: 100px; line-height: 150px;">SWITCH.CM</span><br>TECHNOLOGY STACKS</p>
+    </div>
+    
+    <div id="tech-stack-image" class="step" data-x="0" data-y="-3000" data-rotate="0">
+        <img src="assets/image/switch-cm-tech-stack_block_5.jpeg">
+    </div>
+
+    <div id="why-we-choose-ci" class="step" data-x="-1000" data-y="-4800" data-z="0" data-rotate="90">
+        <p style="font-size: 80px; line-height: 100px;">WHY WE CHOOSE <b class="b move-up" style="font-size: 120px;">CODEIGNITER?</b></p>
+    </div>
+
+    <div id="small-footprint" class="step" data-x="-600" data-y="-4900" data-rotate="45">
+        <p style="font-size: 32px;" class="b">&bullet; Small footprint</p>
+    </div>
+
+    <div id="small-configuration" class="step" data-x="-600" data-y="-4700" data-rotate="45">
+        <p style="font-size: 32px;" class="b">&bullet; Small configuration</p>
+    </div>
+
+    <div id="not-restricted" class="step" data-x="-600" data-y="-4500" data-rotate="45">
+        <p style="font-size: 32px;" class="b">&bullet; Not restricted with coding style</p>
+    </div>
+
+    <div id="load-on-view" class="step" data-x="-1200" data-y="-4800" data-z="0" data-rotate="90" data-transition-speed="500">
+        <p class="b scaling-up">We can even load model on view :p</p>
+    </div>
+
+    <div id="overview-why-we-choose-ci" class="step" data-x="-900" data-y="-4800" data-z="0" data-rotate="90"></div>
+
+    <div id="how-switch-serve" class="step" data-x="2000" data-y="-4800" data-rotate="-90" style="width: 1500px;" data-scale="4">
+        <p class="b" style="font-size: 50px;">HOW SWITCH.CM <b class="b move-up" style="font-size: 90px;">SERVE DATA TO USER?</b></p>
+    </div>
+
+    <div id="heavy-load-ajax" class="step" data-x="5500" data-y="-5200" data-scale="5">
+        <p style="line-height: 55px;"><span style="font-size: 36px;">Switch.cm is heavily depends on</span> <b style="font-size: 87px;">asynchronous calls</b></p>
+    </div>
+
+    <div id="why-async" class="step" data-x="7300" data-y="-3000" data-rotate="90" data-scale="4">
+        <p><b>Why asynchronous calls?</b></p>
+    </div>
+
+    <div id="answer-async" class="step" data-x="5300" data-y="-2800" data-rotate="180" data-scale="4">
+        <p style="line-height: 70px;">
+            We want user have <br> <b style="font-size: 98px; margin-top: 5px;">great experience</b> <br> while using our apps!
+        </p>
+    </div>
+
+    <div id="trade-offs" class="step" data-x="5300" data-y="-2800" data-rotate="180" data-z="-10000">
+        <p style="font-size: 98px; font-weight: bold;">But there are lot of problems</p>
+    </div>
+
+    <div id="old-pc" class="step" data-x="5300" data-y="-2800" data-rotate="180" data-z="-10500" data-rotate-x="90">
+        <p>Users with old PC often to crashed their browsers</p>
+    </div>
+
+    <div id="cross-browser-issue" class="step" data-x="5300" data-y="-2800" data-rotate="180" data-z="-10500" data-rotate-x="90" data-rotate-y="90">
+        <p>Cross browser issue, etc.</p>
+    </div>
+
+    <div id="solution" class="step" data-x="5000" data-y="-3400" data-rotate="180" data-z="-10500" data-rotate-x="0" data-rotate-y="0">
+        <p style="line-height: 100px; font-size: 32px">So we came with a <br><span class="b move-up" style="font-size: 120px;">solution</span></p>
+    </div>
+
+    <div id="server-side-rendering" class="step" data-x="-8000" data-y="-4800" data-scale="5">
+        <p style="font-size: 98px; line-height: 100px;"><b>Server side rendering</b><span style="font-size: 250px; line-height: 0px !important; padding-left: 30px;">!</span></p>
+    </div>
+
+    <div id="fast" class="step" data-x="-10000" data-y="-6700" data-rotate="-90" data-scale="3">
+        <p>&bullet; It's fast</p>
+    </div>
+
+    <div id="process" class="step" data-x="-11000" data-y="-3500" data-rotate="-90" data-z="-40000" data-transition-speed="100">
+        <p>Process all data on server</p>
+    </div>
+
+    <div id="json" class="step" data-x="-11000" data-y="-3500" data-rotate-y="0" data-rotate="-90" data-z="-40000" data-rotate-x="90">
+        <img src="assets/image/json.jpg" width="1024">
+    </div>
+
+    <div id="view" class="step" data-x="-10500" data-y="-3500" data-rotate-y="0" data-rotate="-90" data-z="-40000" data-rotate-x="90">
+        <img src="assets/image/return_view.jpg" width="1024" id="return-view">
+    </div>
+
+    <div id="fast" class="step" data-x="-9500" data-y="-6700" data-rotate="-90" data-scale="3">
+        <p>&bullet; Less browser issue</p>
+    </div>
+</div>
+<script src="assets/js/impress.js/js/impress.js"></script>
+<script>impress().init()</script>
+<script>
+    document.addEventListener('keyup', function (e) {
+        if (e.keyCode === 27) {
+            window.location.replace('index.html#/overview');
+        }
+
+    });
+</script>
+</body>
+</html>
